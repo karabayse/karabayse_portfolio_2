@@ -16,5 +16,5 @@ app.get('/', function(req, res){
 });
 
 app.listen(port, function(){
-  console.log('listening on 2005 ->', port);
+  console.log('server up on:', port);
 });
