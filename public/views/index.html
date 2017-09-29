@@ -22,15 +22,17 @@
       return (
         ce('div', null,
           ce('h1', {style: {color: props.color}}, props.subject),
-          ce('h4', {style: {color: props.color}}, props.title)
+          ce('h4', {style: {color: props.color}}, props.title),
+          ce('h4', {style: {color: props.color}}, props.skills),
         )
       )
-    }
+  }
 
     const MyFirstComponent = function() {
       return ce('div', {id: 'my-first-component'},
         ce(MyTitle, {subject: 'Kara Bayse  |  Portfolio', color: '#9AC0CD'}),
-        ce(MyTitle, {title: 'Full Stack Software Engineer', color: '#607B8B'})
+        ce(MyTitle, {title: 'Full Stack Software Engineer', color: '#607B8B'}),
+        ce(MyTitle, {skills: 'Technical Skills'})
       )
     }
 
